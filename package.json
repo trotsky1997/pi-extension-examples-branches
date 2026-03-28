@@ -1,0 +1,30 @@
+{
+  "name": "pi-extension-with-deps",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone pi extension package for with-deps.",
+  "keywords": [
+    "pi-package",
+    "pi-extension"
+  ],
+  "scripts": {
+    "build": "echo 'nothing to build'",
+    "check": "echo 'nothing to check'"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-agent-core": "*",
+    "@mariozechner/pi-ai": "*",
+    "@mariozechner/pi-coding-agent": "*",
+    "@mariozechner/pi-tui": "*",
+    "@sinclair/typebox": "*"
+  },
+  "pi": {
+    "extensions": [
+      "./with-deps/index.ts"
+    ]
+  },
+  "dependencies": {
+    "ms": "^2.1.3"
+  }
+}
